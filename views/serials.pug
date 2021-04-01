@@ -5,7 +5,11 @@ block content
   h1= title
   - let result=[{name:"Baking bad",author:"baking renold",season:20},{name:"Avengers",author:"stan lee",season:17},{name:"X man",author:"WB",season:23}] 
     div(class="row")
-      each form in result
-        div(class = "col-sm-2") #{form.name}
-        div(class = "col-sm-2") #{form.author}
-        div(class = "col-sm-2") #{form.season} 
+    each form,index in result
+         div(class="col-sm-4 bg-info m-1 p-3" onclick=`buy(${index})`) #{form.name} - #{form.author} - #{form.season}
+  script.
+
+      function buy(itemNo)
+      {
+        alert(`You purchased Item ${itemNo+1}`)
+      }
