@@ -1,4 +1,11 @@
 extends layout
 
 block content
-  h1= title 
+  div(class="container-fluid")
+  h1= title
+  - let result=[{name:"Klara and the Sun",author:"Kazuo Ishiguro",season:20},{name:"The Four Winds",author:"Kristin Hannah",season:17},{name:"Detransition, Baby",author:"Torrey Peters",season:23}] 
+    div(class="row")
+      each form in result
+        div(class = "col-sm-2") #{form.name}
+        div(class = "col-sm-2") #{form.author}
+        div(class = "col-sm-2") #{form.season} 

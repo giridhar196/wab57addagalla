@@ -7,4 +7,4 @@ Class name: Serials
 Attributes:
 Name (String)
 Author (String)
-Season (Numer)
+Season (Number)
