@@ -3,7 +3,7 @@ extends layout
 block content
   div(class="container-fluid")
   h1= title
-  - let result=[{name:"Klara and the Sun",author:"Kazuo Ishiguro",season:20},{name:"The Four Winds",author:"Kristin Hannah",season:17},{name:"Detransition, Baby",author:"Torrey Peters",season:23}] 
+  - let result=[{name:"Baking bad",author:"baking renold",season:20},{name:"Avengers",author:"stan lee",season:17},{name:"X man",author:"WB",season:23}] 
     div(class="row")
       each form in result
         div(class = "col-sm-2") #{form.name}
